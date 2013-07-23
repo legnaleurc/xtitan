@@ -18,7 +18,7 @@ Copyright (c) 2011 NCU OOlab <ncuoolab@gmail.com>
 
 namespace i18n {
 
-	const QString aboutWidgetTitle = QObject::tr( "About Krapture" );
+	const QString aboutWidgetTitle = QObject::tr( "About xTitan" );
 	const QString author = QObject::tr( "Author" );
 	const QString errorOnSaving = QObject::tr( "Error while saving" );
 	const QString license = QObject::tr( "License" );
@@ -161,7 +161,7 @@ void MainWindow::Private::lockTestCaseUI( bool lock ) {
 
 void MainWindow::Private::updateTitle() {
 	bool hasName = this->testcase && !this->testcase->getName().isEmpty();
-	this->host->setWindowTitle( QString( "Krapture - %1" ).arg( hasName ? this->testcase->getName() : QObject::tr( "untitled" ) ) );
+	this->host->setWindowTitle( QString( "xTitan - Test Dirver - %1" ).arg( hasName ? this->testcase->getName() : QObject::tr( "untitled" ) ) );
 }
 
 void MainWindow::Private::onRecreateTestCaseDatabase() {
